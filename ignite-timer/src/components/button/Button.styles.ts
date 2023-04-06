@@ -6,7 +6,7 @@ interface ButtonContainerProps {
   variant: ButtonVariant;
 }
 
-const buttonVariants = {
+const buttonVariants = { //Conjunto de strings que define os tipos de variantes do botão
   primary: 'purple',
   secondary: 'orange',
   danger: 'red',
@@ -16,10 +16,16 @@ const buttonVariants = {
 export const ButtonContainer = styled.button<ButtonContainerProps>`
   width: 100px;
   height: 40px;
+  border-radius: 4px;
+  border: 0;
+  margin: 8px;
 
-  ${props => {
+  background-color: ${props => props.theme.primary};
+  color: ${props => props.theme.secondary};
+
+  /*${props => {
     return css`
-      background-color: ${buttonVariants[props.variant]} //irá receber a variant do componente button
+      background-color: ${buttonVariants[props.variant]} //irá receber a variant como argumento do componente button
     ` 
-  }}
+  }}*/
 `
