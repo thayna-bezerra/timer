@@ -3,3 +3,6 @@
 Aplicação que objetiva a prática do pomodoro. 
 
 <br>
+<h6>
+Projeto 02 IGNITE
+<h6/>
