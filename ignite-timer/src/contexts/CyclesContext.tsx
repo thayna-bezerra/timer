@@ -67,8 +67,8 @@ export function CyclesContextProvider({
       startDate: new Date(),
     }
 
-    setCycles((state) => [...cycles, newCycle]) // estado atual, copia o estado atual e passa-o para o novo ciclo
-    setActiveCycleId(id)
+    setCycles((state) => [...state, newCycle]) // estado atual, copia o estado atual e passa-o para o novo ciclo
+    setActiveCycleId(newCycle.id)
     setAmountSecondsPassed(0)
   }
 
